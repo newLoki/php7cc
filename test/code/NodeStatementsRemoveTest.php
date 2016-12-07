@@ -51,4 +51,14 @@ class NodeStatementsRemoveTest extends \PHPUnit_Framework_TestCase
 class Node extends NodeAbstract
 {
     public $stmts;
+
+    /**
+     * Gets the names of the sub nodes.
+     *
+     * @return array Names of sub nodes
+     */
+    public function getSubNodeNames()
+    {
+        return ['Node1'];
+    }
 }
